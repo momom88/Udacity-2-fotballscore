@@ -8,11 +8,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
-        <LinearLayout
-        style="@style/box">
+        <LinearLayout style="@style/box">
 
 
             <TextView
@@ -21,9 +19,9 @@
 
             <TextView
                 android:id="@+id/team_a_score"
-                android:text="@string/zero"
                 style="@style/zero1"
-                android:freezesText="true"/>
+                android:freezesText="true"
+                android:text="@string/zero" />
 
             <Button
                 style="@style/button"
@@ -31,15 +29,15 @@
                 android:text="@string/goal" />
 
             <TextView
+                style="@style/team"
                 android:layout_width="match_parent"
-                android:text="@string/foul"
-                style="@style/team"/>
+                android:text="@string/foul" />
 
             <TextView
                 android:id="@+id/team_a_foul"
                 style="@style/zero2"
-                android:text="@string/zero"
-                android:freezesText="true" />
+                android:freezesText="true"
+                android:text="@string/zero" />
 
             <Button
                 style="@style/button"
@@ -52,18 +50,16 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <View
                 android:layout_width="2dp"
                 android:layout_height="wrap_content"
-                android:background="#000000"
                 android:layout_marginBottom="190dp"
-                android:layout_marginTop="10dp">
-            </View>
+                android:layout_marginTop="10dp"
+                android:background="#000000"></View>
         </LinearLayout>
 
-        <LinearLayout
-            style="@style/box"
-            >
+        <LinearLayout style="@style/box">
 
             <TextView
                 style="@style/team"
@@ -72,8 +68,8 @@
             <TextView
                 android:id="@+id/team_b_score"
                 style="@style/zero1"
-                android:text="@string/zero"
-                android:freezesText="true"/>\
+                android:freezesText="true"
+                android:text="@string/zero" />\
 
             <Button
                 style="@style/button"
@@ -87,8 +83,8 @@
             <TextView
                 android:id="@+id/team_b_foul"
                 style="@style/zero2"
-                android:text="@string/zero"
-                android:freezesText="true"/>
+                android:freezesText="true"
+                android:text="@string/zero" />
 
             <Button
                 style="@style/button"
