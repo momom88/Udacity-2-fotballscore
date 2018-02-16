@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FotballScoreapp</string>
+    <string name="teama">A TEAM</string>
+    <string name="teamb">B TEAM</string>
+    <string name="zero">0</string>
+    <string name="goal">GOAL</string>
+    <string name="foul">F0UL</string>
+
 </resources>

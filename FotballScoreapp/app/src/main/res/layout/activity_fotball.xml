@@ -12,68 +12,39 @@
         >
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp">
+        style="@style/box">
 
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="A TEAM"
-                android:textColor="#000000"
-                android:textSize="22sp" />
+                style="@style/team"
+                android:text="@string/teama" />
 
             <TextView
                 android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp"
+                android:text="@string/zero"
+                style="@style/zero1"
                 android:freezesText="true"/>
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/button"
                 android:onClick="Ateamgoal"
-                android:text="goal" />
+                android:text="@string/goal" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="FOUL"
-                android:textColor="#000000"
-                android:textSize="22sp" />
+                android:text="@string/foul"
+                style="@style/team"/>
 
             <TextView
                 android:id="@+id/team_a_foul"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="40sp"
+                style="@style/zero2"
+                android:text="@string/zero"
                 android:freezesText="true" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/button"
                 android:onClick="Ateamfoul"
-                android:text="foul" />
+                android:text="@string/foul" />
 
 
         </LinearLayout>
@@ -91,80 +62,46 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
+            style="@style/box"
             >
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="B TEAM"
-                android:textColor="#000000"
-                android:textSize="22sp" />
+                style="@style/team"
+                android:text="@string/teamb" />
 
             <TextView
                 android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp"
+                style="@style/zero1"
+                android:text="@string/zero"
                 android:freezesText="true"/>\
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/button"
                 android:onClick="Bteamgoal"
-                android:text="goal" />
+                android:text="@string/goal" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="FOUL"
-                android:textColor="#000000"
-                android:textSize="22sp" />
+                style="@style/team"
+                android:text="@string/foul" />
 
             <TextView
                 android:id="@+id/team_b_foul"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="40sp"
+                style="@style/zero2"
+                android:text="@string/zero"
                 android:freezesText="true"/>
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
+                style="@style/button"
                 android:layout_margin="8dp"
                 android:onClick="Bteamfoul"
-                android:text="foul" />
+                android:text="@string/foul" />
 
 
         </LinearLayout>
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"
+        style="@style/button2"
         android:onClick="resetbutton"
         android:text="Reset" />
 
