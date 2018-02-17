@@ -7,10 +7,10 @@ import android.widget.TextView;
 
 public class fotball extends AppCompatActivity {
 
-    int Ascore;
-    int Bscore;
-    int Afoul;
-    int Bfoul;
+    int aScore;
+    int bScore;
+    int aFoul;
+    int bFoul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +19,14 @@ public class fotball extends AppCompatActivity {
     }
 
     public void resetbutton(View view) {
-        Ascore = 0;
-        Bscore = 0;
-        Afoul = 0;
-        Bfoul = 0;
-        displayForTeamAF(Afoul);
-        displayForTeamBF(Bfoul);
-        displayForTeamB(Ascore);
-        displayForTeamA(Bscore);
+        aScore = 0;
+        bScore = 0;
+        aFoul = 0;
+        bFoul = 0;
+        displayForTeamAF(aFoul);
+        displayForTeamBF(bFoul);
+        displayForTeamB(aScore);
+        displayForTeamA(bScore);
     }
 
 
@@ -35,8 +35,8 @@ public class fotball extends AppCompatActivity {
      */
 
     public void Ateamfoul(View view) {
-        Afoul = Afoul + 1;
-        displayForTeamAF(Afoul);
+        aFoul = aFoul + 1;
+        displayForTeamAF(aFoul);
     }
 
     /**
@@ -44,8 +44,8 @@ public class fotball extends AppCompatActivity {
      */
 
     public void Bteamfoul(View view) {
-        Bfoul = Bfoul + 1;
-        displayForTeamBF(Bfoul);
+        bFoul = bFoul + 1;
+        displayForTeamBF(bFoul);
     }
 
     /**
@@ -53,8 +53,8 @@ public class fotball extends AppCompatActivity {
      */
 
     public void Ateamgoal(View view) {
-        Ascore = Ascore + 1;
-        displayForTeamA(Ascore);
+        aScore = aScore + 1;
+        displayForTeamA(aScore);
     }
 
     /**
@@ -62,8 +62,8 @@ public class fotball extends AppCompatActivity {
      */
 
     public void Bteamgoal(View view) {
-        Bscore = Bscore + 1;
-        displayForTeamB(Bscore);
+        bScore = bScore + 1;
+        displayForTeamB(bScore);
     }
 
     /**
